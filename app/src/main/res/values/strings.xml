@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">intent</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="ShowToast">Usuário ou senha, inválidos</string>
+</resources>
