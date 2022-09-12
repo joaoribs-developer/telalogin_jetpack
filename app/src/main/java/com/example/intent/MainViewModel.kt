@@ -21,15 +21,26 @@ class MainViewModel: ViewModel() {
     fun validateLogin(): Boolean{
         return _text1.isNotEmpty() && _text2.isNotEmpty()
     }
-    private var _focus: Boolean by mutableStateOf(false)
-    val focus: Boolean get() = _focus
 
+    private var _expand: Boolean by mutableStateOf(false)
+    val expand: Boolean get() = _expand
     fun focusFalse(){
-        _focus = false
+        _expand = false
     }
     fun focusTrue(){
-        _focus = true
+        _expand = true
     }
+    private var _focus: Boolean by mutableStateOf(false)
+    val focus: Boolean get() = _focus
+    fun focusChange(value: Boolean){
+        _focus = value
+    }
+    private var _focus1: Boolean by mutableStateOf(false)
+    val focus1: Boolean get() = _focus1
+    fun focusChange1(value: Boolean){
+        _focus1 = value
+    }
+
 
 
 
